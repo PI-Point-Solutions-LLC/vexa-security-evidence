@@ -32,6 +32,10 @@ The reviewed private baseline includes successful application tests, production 
 
 A same-day material-change review also verified a controlled production deployment rollback and restore with health checks, a successful hosted build/deploy workflow, and a private-storage contract test covering tenant/case linkage, separate ordinary and restricted roles, immutable object and event identity, legal holds, conflicting-event rejection, idempotency, and denial to browser roles. The storage tier remained empty and unbound during this review; no evidence cutover is claimed.
 
+A subsequent subject-free production transaction verified the fail-closed private-processing boundary from quarantined object through authenticated queue dispatch, isolated malware scanning, immutable scanner-result persistence, trust-state clearance, and bounded extraction. The primary queue and dead-letter queue returned to zero backlog. Exact object, account, deployment, scanner-signature, and topology evidence remains restricted.
+
+The reviewed development baseline also added an immutable association-candidate control for separately typed co-presence, communication, synchronized-movement, and shared-asset screening. Same-case endpoints and observations are enforced; alternative explanations and limitations are mandatory; cross-case access is denied; review decisions are append-only; and graph publication requires an explicit authenticated investigator acceptance action. The control does not convert proximity, communication metadata, device data, or shared assets into an automatic identity, companionship, coordination, possession, or exact-presence claim.
+
 ## Required follow-up
 
 - approve and publish the sanitized policy set;

@@ -8,7 +8,7 @@ VE×A uses NIST SP 800-218 SSDF 1.1 as the primary secure-development reference.
 | --- | --- | --- |
 | PO — Prepare the Organization | Version-controlled security invariants, control ownership, roadmap checkpoints, explicit evidence/disclosure boundary | Implemented |
 | PS — Protect the Software | Private source repository, backend-only secrets, reviewable migrations, dependency lock data, separation of public evidence from implementation | Implemented; production access evidence restricted |
-| PW — Produce Well-Secured Software | Authentication/authorization tests, RLS and ACL tests, bounded-input contracts, SSRF-aware retrieval controls, immutable provenance, quarantine and malware-result enforcement, type/lint/build checks | Verified for the reviewed development baseline |
+| PW — Produce Well-Secured Software | Authentication/authorization tests, RLS and ACL tests, bounded-input contracts, SSRF-aware retrieval controls, immutable provenance, quarantine and malware-result enforcement, explicit investigator review before association publication, type/lint/build checks | Verified for the reviewed development baseline |
 | RV — Respond to Vulnerabilities | Risk tracking and remediation commits exist; public reporting process, severity/service targets, and exercise record remain required | Tracked |
 
 ## Release evidence baseline

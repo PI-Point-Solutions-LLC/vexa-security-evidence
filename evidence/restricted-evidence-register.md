@@ -15,5 +15,6 @@ The following evidence should be retained privately and disclosed only through a
 | Full test, security scan, dependency, deployment, and rollback logs | ID.RA, PR.PS, RS.MI | Publish only aggregate status/date/scope; remove paths, versions when risky, payloads, and findings under remediation |
 | Incident, tabletop, vulnerability, and remediation records | RS.* , RC.IM | Publish a closure summary only when safe, lawful, and authorized |
 | Case authorization, audit, provenance, and evidence-integrity records | PR.AA, PR.DS, DE.AE | Never disclose real case, investigator, subject, identifier, location, or evidence content |
+| Association-candidate inputs, alternative explanations, investigator reviews, and graph-publication records | PR.AA, PR.DS, DE.AE | Never disclose case endpoints, relationship hypotheses, evidence links, reviewer identities, subject locations, or analytic parameters that expose private methods |
 
 An evidence attachment is not considered current unless it records the observation date, accountable reviewer, system/environment scope, result, and any unresolved exception.
