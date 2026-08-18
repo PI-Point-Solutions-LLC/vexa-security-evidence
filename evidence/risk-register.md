@@ -13,8 +13,8 @@ Review cadence: quarterly and after a material incident, architecture, provider,
 | R-005 | Credential or privileged-service exposure | PR.AA, PR.DS, RS.MI | Critical | Backend-only secrets, least privilege, redacted logs, revocation paths; production access review evidence required | Mitigating |
 | R-006 | Critical provider, processing tier, or queue outage | GV.SC, PR.IR, RC.RP | High | Bounded retries, idempotency, durable job states, failure visibility; recovery exercise required | Tracked |
 | R-007 | Software or dependency vulnerability reaches production | ID.RA, PR.PS, RV | High | Review, dependency/build checks, regression suites, remediation tracking; public vulnerability process required | Mitigating |
-| R-008 | Synthetic validation data contaminates real investigations or analytics | PR.DS, DE.AE | High | Structural data classification and origin isolation are planned as a release gate | Tracked |
+| R-008 | Synthetic validation data contaminates real investigations or analytics | PR.DS, DE.AE | High | Structural case classification, selector origin, ordinary-directory exclusion, and negative-path regression tests | Mitigated / monitored |
 | R-009 | Lawful-purpose or data-minimization controls are bypassed | GV.OC, GV.RM, PR.AA | Critical | Authorized professional-use policy, case scoping, auditability, provider-specific limits; production operating review required | Mitigating |
-| R-010 | Backup, rollback, or incident recovery is not proven | PR.IR, RS.MI, RC.RP | High | Migration discipline and provider capabilities exist; live exercises and dated evidence required | Tracked |
+| R-010 | Backup, rollback, or incident recovery is not proven | PR.IR, RS.MI, RC.RP | High | A controlled production deployment rollback/restore passed; data restore and broader incident/service-recovery exercises remain required | Mitigating |
 
 Detailed attack paths, affected components, owners, due dates, findings, and acceptance rationales remain in the restricted register.

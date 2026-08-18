@@ -17,15 +17,15 @@ This category-level current profile is intentionally conservative. **Verified** 
 | ID.IM Improvement | Verified | Dated checkpoints, regression tests, and remediation commits support iterative control improvement |
 | PR.AA Identity Management, Authentication, Access Control | Verified | Automated organization/case authorization, security-definer ACL, and access-boundary regression suites; production tenant evidence remains restricted |
 | PR.AT Awareness and Training | Tracked | Secure handling rules exist; dated training/acknowledgment record is required before production operations |
-| PR.DS Data Security | Verified | Case isolation, immutable provenance, evidence hashing, private storage, quarantine, and fail-closed trust transitions have automated tests |
+| PR.DS Data Security | Verified | Case isolation, immutable provenance, evidence hashing, private storage, quarantine, fail-closed trust transitions, and separate ordinary/restricted storage contracts have automated tests |
 | PR.PS Platform Security | Verified | Security checks, schema lint, dependency/build validation, and protected backend boundaries are exercised; provider configuration is restricted evidence |
-| PR.IR Technology Infrastructure Resilience | Implemented | Idempotent jobs, bounded retries, failure states, and rollback-aware migrations exist; production recovery exercise remains tracked |
+| PR.IR Technology Infrastructure Resilience | Implemented | Idempotent jobs, bounded retries, failure states, scale-to-zero processing, and rollback-aware migrations exist; a production deployment rollback/restore passed, while data restore and wider service recovery remain tracked |
 | DE.CM Continuous Monitoring | Implemented | Health, job, audit, and security-result telemetry exist; external alert delivery and production operating evidence remain tracked |
 | DE.AE Adverse Event Analysis | Implemented | Security-relevant states and append-only results support analysis; production triage exercise remains tracked |
 | RS.MA Incident Management | Tracked | Fail-closed containment paths exist; approved incident plan and exercise record remain required |
 | RS.AN Incident Analysis | Implemented | Immutable audit/provenance and security-result records support reconstruction; operating evidence is restricted |
 | RS.CO Incident Response Reporting and Communication | Tracked | Owner exists; approved internal/external communication plan and tested contacts remain required |
-| RS.MI Incident Mitigation | Implemented | Revocation, rejection, quarantine, retry, and deployment rollback mechanisms exist; exercise evidence remains required |
+| RS.MI Incident Mitigation | Implemented | Revocation, rejection, quarantine, retry, and deployment rollback mechanisms exist; a controlled production deployment rollback/restore passed, while broader incident exercises remain required |
 | RC.RP Recovery Plan Execution | Tracked | Backup/provider capabilities and migration rollback practices exist; dated restore and service-recovery exercise required |
 | RC.CO Recovery Communication | Tracked | Owner identified; tested stakeholder communication record required |
 | RC.IM Recovery Improvement | Implemented | Checkpoints and regression additions capture lessons; recovery-exercise findings remain required |

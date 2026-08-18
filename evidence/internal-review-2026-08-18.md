@@ -30,11 +30,13 @@ Assurance level: management-led internal review; not an independent audit or cer
 
 The reviewed private baseline includes successful application tests, production build, database reset/migration validation, focused database security tests, and a no-finding database security-advisor result. A private processing-container baseline also verified clean-file and industry-standard antivirus test-file handling. Exact revisions, logs, provider identifiers, and configuration remain restricted.
 
+A same-day material-change review also verified a controlled production deployment rollback and restore with health checks, a successful hosted build/deploy workflow, and a private-storage contract test covering tenant/case linkage, separate ordinary and restricted roles, immutable object and event identity, legal holds, conflicting-event rejection, idempotency, and denial to browser roles. The storage tier remained empty and unbound during this review; no evidence cutover is claimed.
+
 ## Required follow-up
 
 - approve and publish the sanitized policy set;
 - enable continuous public-evidence freshness and disclosure checks;
 - complete production deployment evidence and privileged-access review;
-- verify alert delivery and run rollback, incident, and recovery exercises;
+- verify alert delivery and run incident, data-restore, and broader service-recovery exercises;
 - establish the sanitized vendor register and periodic review;
 - reassess after each material production or investigative-data-flow change.
