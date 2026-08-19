@@ -44,6 +44,8 @@ The reviewed baseline now also supplies a bounded case-authorized “where and w
 
 The canonical findings substrate now distinguishes findings from hypotheses and records interpretation through immutable, append-only assessments. Exact supporting, contradicting, and contextual observation links are same-case guarded and immutable. Contradiction remains distinct from disproval; new same-subject evidence appends a review-required signal while retaining the prior substantive state. Investigator assessment requires written rationale, and authorized views disclose assessment origin and exact evidence linkage without weakening tenant isolation. Focused tests cover state seeding, contradiction retention, automatic re-evaluation, investigator assessment, immutability, cross-case denial, and outsider denial.
 
+Canonical workspace context now supports case-bound URL selection and independent exact-object retrieval for observations, findings/hypotheses, and association candidates. Exact-object authorization occurs before lookup; cross-case identifiers return no object, unsupported object kinds are rejected, and bounded list pagination does not prevent an authorized investigator from reopening a previously selected object. Detail projections retain uncertainty, rationale, limitations, alternatives, and direct evidence links without exposing storage coordinates or bypassing case authorization.
+
 ## Required follow-up
 
 - approve and publish the sanitized policy set;
