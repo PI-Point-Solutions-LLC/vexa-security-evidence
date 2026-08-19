@@ -15,7 +15,7 @@ This category-level current profile is intentionally conservative. **Verified** 
 | ID.AM Asset Management | Implemented | Private source, data, provider, and infrastructure inventories exist; sanitized asset classes remain required |
 | ID.RA Risk Assessment | Implemented | [Risk register](risk-register.md); vulnerability and architecture reviews retained privately |
 | ID.IM Improvement | Verified | Dated checkpoints, regression tests, and remediation commits support iterative control improvement |
-| PR.AA Identity Management, Authentication, Access Control | Verified | Automated organization/case authorization, security-definer ACL, access-boundary regression suites, and live case-authorized private-delivery revalidation; production tenant evidence remains restricted |
+| PR.AA Identity Management, Authentication, Access Control | Verified | Automated organization/case authorization, separate expiring restricted-evidence roles, security-definer ACL, access-boundary regression suites, and live case-authorized private-delivery revalidation; production tenant evidence remains restricted |
 | PR.AT Awareness and Training | Tracked | Secure handling rules exist; dated training/acknowledgment record is required before production operations |
 | PR.DS Data Security | Verified | Case isolation, immutable provenance, evidence hashing, private storage, quarantine, fail-closed trust transitions, separate ordinary/restricted storage contracts, and digest-only short-lived delivery grants have automated and sanitized live evidence |
 | PR.PS Platform Security | Verified | Security checks, schema lint, dependency/build validation, and protected backend boundaries are exercised; provider configuration is restricted evidence |
