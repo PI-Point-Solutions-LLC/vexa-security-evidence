@@ -42,6 +42,8 @@ The case-scoped relationship graph now projects candidate lifecycle counts and c
 
 The reviewed baseline now also supplies a bounded case-authorized “where and with whom” screening summary. Recurring-place calculations require entity attribution, exact canonical event time, explicit reported accuracy within the configured ceiling, and repeated observations within the spatial threshold. Imprecise, inaccurate, unattributed, rejected, irrelevant, and merged observations remain preserved outside that exact calculation. Repeated association summaries canonicalize entity pairs, retain candidate kinds and the latest append-only uncertainty states, and do not convert repetition into current presence, residence, workplace, companionship, coordination, household, ownership, or identity. Focused tests cover filtering, recurrence, pair grouping, unresolved retention, entity scope, and tenant denial.
 
+The canonical findings substrate now distinguishes findings from hypotheses and records interpretation through immutable, append-only assessments. Exact supporting, contradicting, and contextual observation links are same-case guarded and immutable. Contradiction remains distinct from disproval; new same-subject evidence appends a review-required signal while retaining the prior substantive state. Investigator assessment requires written rationale, and authorized views disclose assessment origin and exact evidence linkage without weakening tenant isolation. Focused tests cover state seeding, contradiction retention, automatic re-evaluation, investigator assessment, immutability, cross-case denial, and outsider denial.
+
 ## Required follow-up
 
 - approve and publish the sanitized policy set;
