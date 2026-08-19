@@ -40,6 +40,8 @@ The reviewed baseline also distinguishes unresolved, possible, probable, confirm
 
 The case-scoped relationship graph now projects candidate lifecycle counts and canonical observed-activity time onto affected nodes. Activity recency uses event time rather than retrieval or database-creation time, retains timestamp precision, and represents undated nodes separately. The visual presentation includes a case-relative date legend and redundant non-color unresolved cues. This projection does not change candidate meaning or promote graph structure into identity, importance, influence, association strength, or location conclusions.
 
+The reviewed baseline now also supplies a bounded case-authorized “where and with whom” screening summary. Recurring-place calculations require entity attribution, exact canonical event time, explicit reported accuracy within the configured ceiling, and repeated observations within the spatial threshold. Imprecise, inaccurate, unattributed, rejected, irrelevant, and merged observations remain preserved outside that exact calculation. Repeated association summaries canonicalize entity pairs, retain candidate kinds and the latest append-only uncertainty states, and do not convert repetition into current presence, residence, workplace, companionship, coordination, household, ownership, or identity. Focused tests cover filtering, recurrence, pair grouping, unresolved retention, entity scope, and tenant denial.
+
 ## Required follow-up
 
 - approve and publish the sanitized policy set;
