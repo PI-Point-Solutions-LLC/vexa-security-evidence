@@ -46,6 +46,8 @@ The canonical findings substrate now distinguishes findings from hypotheses and 
 
 Canonical workspace context now supports case-bound URL selection and independent exact-object retrieval for observations, findings/hypotheses, and association candidates. Exact-object authorization occurs before lookup; cross-case identifiers return no object, unsupported object kinds are rejected, and bounded list pagination does not prevent an authorized investigator from reopening a previously selected object. Detail projections retain uncertainty, rationale, limitations, alternatives, and direct evidence links without exposing storage coordinates or bypassing case authorization.
 
+Seeded relationship expansion now supports up to six hops. Depths above three require a specific authorized seed and tighter node and edge ceilings; unseeded deep traversal and requests beyond the deep ceilings are rejected before traversal. The interface discloses the active bound and states that truncation is a coverage limit rather than evidence that no further relationship exists. Focused tests cover far-hop reachability, structural selector retention, unsafe-bound rejection, and tenant denial.
+
 ## Required follow-up
 
 - approve and publish the sanitized policy set;
