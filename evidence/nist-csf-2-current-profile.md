@@ -1,6 +1,6 @@
 # VE×A NIST CSF 2.0 Current-Profile Evidence Matrix
 
-Reviewed: 2026-08-18
+Reviewed: 2026-08-19
 
 This category-level current profile is intentionally conservative. **Verified** requires current reproducible evidence; **Implemented** means a control exists but production corroboration is restricted or incomplete; **Tracked** is open work.
 
@@ -15,9 +15,9 @@ This category-level current profile is intentionally conservative. **Verified** 
 | ID.AM Asset Management | Implemented | Private source, data, provider, and infrastructure inventories exist; sanitized asset classes remain required |
 | ID.RA Risk Assessment | Implemented | [Risk register](risk-register.md); vulnerability and architecture reviews retained privately |
 | ID.IM Improvement | Verified | Dated checkpoints, regression tests, and remediation commits support iterative control improvement |
-| PR.AA Identity Management, Authentication, Access Control | Verified | Automated organization/case authorization, security-definer ACL, and access-boundary regression suites; production tenant evidence remains restricted |
+| PR.AA Identity Management, Authentication, Access Control | Verified | Automated organization/case authorization, security-definer ACL, access-boundary regression suites, and live case-authorized private-delivery revalidation; production tenant evidence remains restricted |
 | PR.AT Awareness and Training | Tracked | Secure handling rules exist; dated training/acknowledgment record is required before production operations |
-| PR.DS Data Security | Verified | Case isolation, immutable provenance, evidence hashing, private storage, quarantine, fail-closed trust transitions, and separate ordinary/restricted storage contracts have automated tests |
+| PR.DS Data Security | Verified | Case isolation, immutable provenance, evidence hashing, private storage, quarantine, fail-closed trust transitions, separate ordinary/restricted storage contracts, and digest-only short-lived delivery grants have automated and sanitized live evidence |
 | PR.PS Platform Security | Verified | Security checks, schema lint, dependency/build validation, and protected backend boundaries are exercised; provider configuration is restricted evidence |
 | PR.IR Technology Infrastructure Resilience | Implemented | Idempotent jobs, bounded retries, failure states, scale-to-zero processing, and rollback-aware migrations exist; a production deployment rollback/restore passed, while data restore and wider service recovery remain tracked |
 | DE.CM Continuous Monitoring | Implemented | Health, job, audit, and security-result telemetry exist; external alert delivery and production operating evidence remain tracked |
