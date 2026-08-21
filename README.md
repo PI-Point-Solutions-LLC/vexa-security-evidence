@@ -13,6 +13,11 @@ This repository describes security outcomes, governance, verification methods, a
 - [Sanitized risk register](evidence/risk-register.md)
 - [Internal security review](evidence/internal-review-2026-08-18.md)
 - [Restricted evidence attachment register](evidence/restricted-evidence-register.md)
+- [Public security policy](policies/security-policy.md)
+- [Vulnerability reporting policy](policies/vulnerability-reporting.md)
+- [Incident response policy](policies/incident-response.md)
+- [Continuity and recovery policy](policies/business-continuity.md)
+- [Sanitized vendor assurance register](evidence/vendor-assurance-register.md)
 
 ## Framework use
 
