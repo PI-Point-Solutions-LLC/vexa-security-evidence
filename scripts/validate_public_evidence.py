@@ -4,10 +4,12 @@
 from __future__ import annotations
 
 import re
+from datetime import date, datetime
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+MAX_REVIEW_AGE_DAYS = 120
 TEXT_FILES = sorted(ROOT.glob("*.md")) + sorted((ROOT / "evidence").glob("*.md")) + sorted((ROOT / "policies").glob("*.md"))
 REQUIRED = {
     "README.md",
@@ -61,8 +63,16 @@ if missing:
 
 for path in TEXT_FILES:
     text = path.read_text(encoding="utf-8")
-    if not re.search(r"^(?:Reviewed|Review date|Register date): 20\d{2}-\d{2}-\d{2}$", text, re.MULTILINE) and path.name != "README.md":
+    review_match = re.search(r"^(?:Reviewed|Review date|Register date): (20\d{2}-\d{2}-\d{2})$", text, re.MULTILINE)
+    if not review_match and path.name != "README.md":
         fail(f"missing review date: {path.relative_to(ROOT)}")
+    if review_match:
+        reviewed = datetime.strptime(review_match.group(1), "%Y-%m-%d").date()
+        age = (date.today() - reviewed).days
+        if age < 0:
+            fail(f"future review date: {path.relative_to(ROOT)}")
+        if age > MAX_REVIEW_AGE_DAYS:
+            fail(f"stale review date ({age} days): {path.relative_to(ROOT)}")
     for label, pattern in FORBIDDEN.items():
         if pattern.search(text):
             fail(f"forbidden {label} pattern: {path.relative_to(ROOT)}")
