@@ -1,6 +1,6 @@
 # Security Control Ownership
 
-Reviewed: 2026-08-18
+Reviewed: 2026-08-21
 
 VE×A currently uses consolidated ownership appropriate to a small organization. Role consolidation does not remove review, evidence, or separation-of-duty requirements where the same person performs multiple functions.
 

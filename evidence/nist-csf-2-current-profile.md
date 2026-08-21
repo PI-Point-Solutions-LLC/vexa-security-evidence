@@ -1,34 +1,34 @@
 # VE×A NIST CSF 2.0 Current-Profile Evidence Matrix
 
-Reviewed: 2026-08-19
+Reviewed: 2026-08-21
 
-This category-level current profile is intentionally conservative. **Verified** requires current reproducible evidence; **Implemented** means a control exists but production corroboration is restricted or incomplete; **Tracked** is open work.
+This category-level current profile is intentionally conservative. Detailed proof is retained internally; public entries state only the control objective, maturity, validation posture, and remaining work.
 
 | Function / category | Status | Public evidence or required next evidence |
 | --- | --- | --- |
-| GV.OC Organizational Context | Implemented | [Assurance boundary](assurance-boundary.md); authorized professional-investigation purpose and sensitive-data scope documented |
-| GV.RM Risk Management Strategy | Implemented | [Risk register](risk-register.md); treatment and review rules documented |
-| GV.RR Roles, Responsibilities, Authorities | Implemented | [Control ownership](control-ownership.md) |
-| GV.PO Policy | Implemented | Private security policy is version controlled; sanitized publication and policy lifecycle remain tracked |
-| GV.OV Oversight | Implemented | [Internal review](internal-review-2026-08-18.md); independent assessment not claimed |
-| GV.SC Cybersecurity Supply Chain Risk Management | Tracked | Provider review exists in private engineering records; sanitized vendor register and dated review are required |
-| ID.AM Asset Management | Implemented | Private source, data, provider, and infrastructure inventories exist; sanitized asset classes remain required |
-| ID.RA Risk Assessment | Implemented | [Risk register](risk-register.md); vulnerability and architecture reviews retained privately |
-| ID.IM Improvement | Verified | Dated checkpoints, regression tests, and remediation commits support iterative control improvement |
-| PR.AA Identity Management, Authentication, Access Control | Verified | Automated organization/case authorization, separate expiring restricted-evidence roles, security-definer ACL, access-boundary regression suites, and live case-authorized private-delivery revalidation; production tenant evidence remains restricted |
-| PR.AT Awareness and Training | Tracked | Secure handling rules exist; dated training/acknowledgment record is required before production operations |
-| PR.DS Data Security | Verified | Case isolation, immutable provenance, evidence hashing, private storage, quarantine, fail-closed trust transitions, separate ordinary/restricted storage contracts, and digest-only short-lived delivery grants have automated and sanitized live evidence |
-| PR.PS Platform Security | Verified | Security checks, schema lint, dependency/build validation, and protected backend boundaries are exercised; provider configuration is restricted evidence |
-| PR.IR Technology Infrastructure Resilience | Implemented | Idempotent jobs, bounded retries, failure states, scale-to-zero processing, and rollback-aware migrations exist; a production deployment rollback/restore passed, while data restore and wider service recovery remain tracked |
-| DE.CM Continuous Monitoring | Implemented | Health, job, audit, and security-result telemetry exist; external alert delivery and production operating evidence remain tracked |
-| DE.AE Adverse Event Analysis | Implemented | Security-relevant states and append-only results support analysis; production triage exercise remains tracked |
-| RS.MA Incident Management | Tracked | Fail-closed containment paths exist; approved incident plan and exercise record remain required |
-| RS.AN Incident Analysis | Implemented | Immutable audit/provenance and security-result records support reconstruction; operating evidence is restricted |
-| RS.CO Incident Response Reporting and Communication | Tracked | Owner exists; approved internal/external communication plan and tested contacts remain required |
-| RS.MI Incident Mitigation | Implemented | Revocation, rejection, quarantine, retry, and deployment rollback mechanisms exist; a controlled production deployment rollback/restore passed, while broader incident exercises remain required |
-| RC.RP Recovery Plan Execution | Tracked | Backup/provider capabilities and migration rollback practices exist; dated restore and service-recovery exercise required |
-| RC.CO Recovery Communication | Tracked | Owner identified; tested stakeholder communication record required |
-| RC.IM Recovery Improvement | Implemented | Checkpoints and regression additions capture lessons; recovery-exercise findings remain required |
+| GV.OC Organizational Context | IMPLEMENTED | Authorized-use purpose, stakeholders, and sensitive-data scope are documented and reviewed. |
+| GV.RM Risk Management Strategy | IMPLEMENTED — VALIDATION CONTINUING | Risk treatment and review rules operate; broader operating evidence continues to mature. |
+| GV.RR Roles, Responsibilities, Authorities | IMPLEMENTED | Security accountability and review cadence are documented. |
+| GV.PO Policy | PARTIALLY IMPLEMENTED | Core policy is version controlled; sanitized policy publication and lifecycle evidence remain in progress. |
+| GV.OV Oversight | IMPLEMENTED — VALIDATION CONTINUING | Management review is active; independent assessment is not claimed. |
+| GV.SC Cybersecurity Supply Chain Risk Management | PARTIALLY IMPLEMENTED | Risk-ranked provider review exists; the sanitized vendor register and recurring public review record remain planned. |
+| ID.AM Asset Management | IMPLEMENTED — VALIDATION CONTINUING | Private inventories cover relevant systems, data, software, and services; continuous assurance is expanding. |
+| ID.RA Risk Assessment | IMPLEMENTED — VALIDATION CONTINUING | Risk, vulnerability, and architecture reviews are retained internally and revisited after material change. |
+| ID.IM Improvement | IMPLEMENTED | Dated reviews, testing, and remediation history demonstrate iterative improvement. |
+| PR.AA Identity Management, Authentication, Access Control | IMPLEMENTED — VALIDATION CONTINUING | Case-scoped and privileged-access outcomes are tested; broader periodic access review remains in progress. |
+| PR.AT Awareness and Training | PARTIALLY IMPLEMENTED | Secure-handling rules exist; formal recurring acknowledgment evidence remains planned. |
+| PR.DS Data Security | IMPLEMENTED — VALIDATION CONTINUING | Private storage, isolation, integrity, quarantine, controlled delivery, and audit outcomes have controlled validation; broader recovery assurance continues. |
+| PR.PS Platform Security | IMPLEMENTED — VALIDATION CONTINUING | Secure-development and protected-runtime outcomes are exercised; continuous configuration assurance is expanding. |
+| PR.IR Technology Infrastructure Resilience | IMPLEMENTED — VALIDATION CONTINUING | Resilient processing and controlled rollback have been exercised; broader failure and recovery scenarios remain in progress. |
+| DE.CM Continuous Monitoring | PARTIALLY IMPLEMENTED | Security, health, usage, and processing telemetry operate; broader alert delivery and response integration remain in progress. |
+| DE.AE Adverse Event Analysis | IMPLEMENTED — VALIDATION CONTINUING | Auditable security and evidence states support analysis; recurring triage exercises remain planned. |
+| RS.MA Incident Management | PARTIALLY IMPLEMENTED | Containment and ownership exist; the complete approved plan and exercise cycle remain in progress. |
+| RS.AN Incident Analysis | IMPLEMENTED — VALIDATION CONTINUING | Audit and provenance evidence support reconstruction; recurring operating exercises remain planned. |
+| RS.CO Incident Response Reporting and Communication | PARTIALLY IMPLEMENTED | Accountability exists; tested internal and external communication procedures remain in progress. |
+| RS.MI Incident Mitigation | IMPLEMENTED — VALIDATION CONTINUING | Containment, revocation, and rollback outcomes have controlled validation; broader scenarios remain planned. |
+| RC.RP Recovery Plan Execution | PARTIALLY IMPLEMENTED | Recovery design and controlled exercises exist; broader service and authorized-data recovery testing remains in progress. |
+| RC.CO Recovery Communication | PLANNED | Accountable ownership exists; tested stakeholder communication evidence remains to be completed. |
+| RC.IM Recovery Improvement | IMPLEMENTED — VALIDATION CONTINUING | Lessons and remediation are tracked; recurring recovery results will drive further maturity. |
 
 ## Priority closure order
 
