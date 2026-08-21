@@ -22,9 +22,10 @@ Framework alignment is not certification. VE×A does not claim NIST certificatio
 
 ## Status language
 
-- **Verified**: a current control outcome has dated, reproducible evidence.
-- **Implemented**: the control exists, but current public evidence alone does not independently verify its production configuration.
-- **Tracked**: required or planned work is recorded and remains open.
-- **Not applicable**: excluded with a documented scope rationale.
+- **IMPLEMENTED**: the control operates and supporting evidence is retained.
+- **IMPLEMENTED — VALIDATION CONTINUING**: the control operates, with broader or recurring assurance work still underway.
+- **PARTIALLY IMPLEMENTED**: part of the control objective operates and material maturity work remains.
+- **PLANNED**: the control objective is recorded but is not represented as operating.
+- **NOT APPLICABLE**: the objective is outside scope with a documented rationale.
 
-No control is marked verified merely because it is planned or documented.
+Where useful, an entry also distinguishes design, implementation, production validation, and continuous assurance. Public status never substitutes for restricted technical evidence or independent certification.
