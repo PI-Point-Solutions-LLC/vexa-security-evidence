@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TEXT_FILES = sorted(ROOT.glob("*.md")) + sorted((ROOT / "evidence").glob("*.md"))
+TEXT_FILES = sorted(ROOT.glob("*.md")) + sorted((ROOT / "evidence").glob("*.md")) + sorted((ROOT / "policies").glob("*.md"))
 REQUIRED = {
     "README.md",
     "evidence/assurance-boundary.md",
@@ -17,6 +17,11 @@ REQUIRED = {
     "evidence/risk-register.md",
     "evidence/internal-review-2026-08-18.md",
     "evidence/restricted-evidence-register.md",
+    "evidence/vendor-assurance-register.md",
+    "policies/business-continuity.md",
+    "policies/incident-response.md",
+    "policies/security-policy.md",
+    "policies/vulnerability-reporting.md",
 }
 FORBIDDEN = {
     "private_key": re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
@@ -30,6 +35,11 @@ PUBLIC_CLAIM_FILES = {
     "evidence/nist-csf-2-current-profile.md",
     "evidence/risk-register.md",
     "evidence/secure-development.md",
+    "evidence/vendor-assurance-register.md",
+    "policies/business-continuity.md",
+    "policies/incident-response.md",
+    "policies/security-policy.md",
+    "policies/vulnerability-reporting.md",
 }
 RESTRICTED_IMPLEMENTATION_PATTERNS = {
     "uuid": re.compile(r"\b[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}\b", re.I),
@@ -62,7 +72,7 @@ for path in TEXT_FILES:
             if pattern.search(text):
                 fail(f"restricted implementation detail ({label}): {relative}")
     for target in re.findall(r"\[[^]]+\]\(([^)]+)\)", text):
-        if "://" in target or target.startswith("#"):
+        if "://" in target or target.startswith(("#", "mailto:")):
             continue
         resolved = (path.parent / target.split("#", 1)[0]).resolve()
         if not resolved.is_file() or ROOT not in resolved.parents:
