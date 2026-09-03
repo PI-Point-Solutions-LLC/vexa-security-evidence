@@ -10,6 +10,9 @@ the restricted record and is available under an appropriate confidentiality proc
 | --- | --- |
 | GV.SC Cybersecurity Supply Chain Risk Management | IMPLEMENTED — VALIDATION CONTINUING |
 | DE.CM Continuous Monitoring | PARTIALLY IMPLEMENTED |
+| ID.AM Asset Management | IMPLEMENTED — VALIDATION CONTINUING |
+| PR.DS Data Security | IMPLEMENTED — VALIDATION CONTINUING |
+| DE.AE Adverse Event Analysis | IMPLEMENTED — VALIDATION CONTINUING |
 
 No change to published category status resulted from this review.
 
