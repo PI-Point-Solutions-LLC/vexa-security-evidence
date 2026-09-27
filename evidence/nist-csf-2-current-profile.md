@@ -1,6 +1,6 @@
 # VE×A NIST CSF 2.0 Current-Profile Evidence Matrix
 
-Reviewed: 2026-09-23
+Reviewed: 2026-09-27
 
 This category-level current profile is intentionally conservative. Detailed proof is retained internally; public entries state only the control objective, maturity, validation posture, and remaining work.
 
